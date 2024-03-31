@@ -28,6 +28,11 @@
             android:permission="android.permission.WRITE_APN_SETTINGS"
             android:exported="true" />
 
+        <provider
+            android:name=".VendorConfigProvider"
+            android:authorities="com.google.android.carrier.vendorprovider"
+            android:exported="true" />
+
         <!-- started only through adb, which holds the privileged BIND_CARRIER_SERVICES perm-->
         <activity
             android:name=".TestActivity"
